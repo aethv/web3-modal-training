@@ -3,10 +3,55 @@ import os
 import torch
 import logging
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments
-from datasets import load_dataset, Dataset
+from datasets import Dataset, DatasetDict
 import pandas as pd
 import json
 import config
+
+# Create directories
+os.makedirs("data", exist_ok=True)
+os.makedirs("raw_data", exist_ok=True)
+os.makedirs("models", exist_ok=True)
+
+# Load configuration
+with open("config.json", "r") as f:
+    config = json.load(f)
+
+# Initialize tokenizer
+model_name = config["base_model_name"]
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# Set pad_token if needed
+if tokenizer.pad_token is None:
+    tokenizer.pad_token = tokenizer.eos_token
+
+# Check if sample data exists, otherwise create it
+if not os.path.exists(os.path.join("raw_data", "prompt_code_pairs.json")):
+    # Create a simple example dataset
+    sample_data = [
+        {"prompt": "Create an ERC20 token", "code": "// ERC20 token code here"},
+        {"prompt": "Build NFT minting contract", "code": "// NFT contract code here"}
+        # Add more samples as needed
+    ]
+    with open(os.path.join("raw_data", "prompt_code_pairs.json"), "w") as f:
+        json.dump(sample_data, f)
+
+# Load your data
+with open(os.path.join("raw_data", "prompt_code_pairs.json"), "r") as f:
+    data = json.load(f)
+
+# Convert to dataset format
+train_dataset = Dataset.from_dict({
+    "prompt": [item["prompt"] for item in data],
+    "code": [item["code"] for item in data]
+})
+
+# Split into train/validation
+split_dataset = train_dataset.train_test_split(test_size=0.1)
+dataset_dict = DatasetDict({
+    "train": split_dataset["train"],
+    "validation": split_dataset["test"]
+})
 
 # Configure logging
 logging.basicConfig(
@@ -18,6 +63,7 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
 
 class Web3ModelSetup:
     def __init__(self, config_path="config.json"):
@@ -175,24 +221,14 @@ class Web3ModelSetup:
             return None
         
         def tokenize_function(examples):
-            # Format inputs based on the model's expected format
-            inputs = [
-                f"{self.config['prompt_prefix']}{prompt}{self.config['prompt_suffix']}{code}{self.config['eos_token']}"
-                for prompt, code in zip(examples['prompt'], examples['code'])
-            ]
+            # Format: [USER] prompt [ASSISTANT] code
+            inputs = [f"[USER] {prompt} [ASSISTANT]" for prompt in examples["prompt"]]
+            targets = examples["code"]
             
-            # Tokenize inputs
-            model_inputs = self.tokenizer(
-                inputs,
-                max_length=self.config["max_length"],
-                padding="max_length",
-                truncation=True,
-                return_tensors="pt"
-            )
+            model_inputs = tokenizer(inputs, padding="max_length", truncation=True, max_length=512)
+            labels = tokenizer(targets, padding="max_length", truncation=True, max_length=1024)
             
-            # Set labels equal to input_ids for causal language modeling
-            model_inputs["labels"] = model_inputs["input_ids"].clone()
-            
+            model_inputs["labels"] = labels["input_ids"]
             return model_inputs
         
         try:
@@ -208,10 +244,12 @@ class Web3ModelSetup:
                 remove_columns=dataset.column_names
             )
             
-            # Save tokenized dataset
-            tokenized_path = os.path.join(self.config["data_dir"], "tokenized_dataset")
-            tokenized_dataset.save_to_disk(tokenized_path)
-            logger.info(f"Tokenized dataset saved to {tokenized_path}")
+            # Apply tokenization
+            tokenized_dataset = dataset_dict.map(tokenize_function, batched=True)
+
+            # Save the dataset to disk
+            tokenized_dataset.save_to_disk(os.path.join("data", "tokenized_dataset"))
+            print(f"Tokenized dataset saved to {os.path.join('data', 'tokenized_dataset')}")
             
             return tokenized_dataset
             

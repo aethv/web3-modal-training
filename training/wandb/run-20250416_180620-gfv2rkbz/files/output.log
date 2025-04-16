@@ -1,0 +1,20 @@
+2025-04-16 18:06:21,339 - __main__ - INFO - Using device: cpu
+2025-04-16 18:06:21,340 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+Successfully loaded tokenized dataset
+2025-04-16 18:06:21,354 - __main__ - INFO - Loading model and tokenizer from ./models/base_model
+2025-04-16 18:06:21,437 - __main__ - INFO - Using LoRA for parameter-efficient fine-tuning
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 11.82it/s]
+trainable params: 8,388,608 || all params: 6,746,935,296 || trainable%: 0.1243
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/thangnguyen/development/tutorial/web3-modal-training/training/train.py", line 152, in <module>
+    final_model_path = train_model(args.config, args.resume, args.checkpoint)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thangnguyen/development/tutorial/web3-modal-training/training/train.py", line 128, in train_model
+    eval_dataset=tokenized_dataset["test"],
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/datasets/dataset_dict.py", line 82, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'test'

@@ -1,0 +1,15 @@
+{"time":"2025-04-16T18:14:57.351841+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/thangnguyen/development/tutorial/web3-modal-training/training/wandb/run-20250416_181457-7byjg4qt/logs/debug-core.log"}
+{"time":"2025-04-16T18:14:57.787924+07:00","level":"INFO","msg":"created new stream","id":"7byjg4qt"}
+{"time":"2025-04-16T18:14:57.78797+07:00","level":"INFO","msg":"stream: started","id":"7byjg4qt"}
+{"time":"2025-04-16T18:14:57.788034+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"7byjg4qt"}
+{"time":"2025-04-16T18:14:57.788067+07:00","level":"INFO","msg":"sender: started","stream_id":"7byjg4qt"}
+{"time":"2025-04-16T18:14:57.788062+07:00","level":"INFO","msg":"handler: started","stream_id":"7byjg4qt"}
+{"time":"2025-04-16T18:14:58.164203+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-16T18:14:59.875866+07:00","level":"INFO","msg":"stream: closing","id":"7byjg4qt"}
+{"time":"2025-04-16T18:14:59.87603+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-16T18:14:59.876112+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-16T18:15:01.665274+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-16T18:15:02.803242+07:00","level":"INFO","msg":"handler: closed","stream_id":"7byjg4qt"}
+{"time":"2025-04-16T18:15:02.803519+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7byjg4qt"}
+{"time":"2025-04-16T18:15:02.803742+07:00","level":"INFO","msg":"sender: closed","stream_id":"7byjg4qt"}
+{"time":"2025-04-16T18:15:02.804417+07:00","level":"INFO","msg":"stream: closed","id":"7byjg4qt"}

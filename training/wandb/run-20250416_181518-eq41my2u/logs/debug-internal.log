@@ -1,0 +1,7 @@
+{"time":"2025-04-16T18:15:18.052438+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/thangnguyen/development/tutorial/web3-modal-training/training/wandb/run-20250416_181518-eq41my2u/logs/debug-core.log"}
+{"time":"2025-04-16T18:15:18.454437+07:00","level":"INFO","msg":"created new stream","id":"eq41my2u"}
+{"time":"2025-04-16T18:15:18.454476+07:00","level":"INFO","msg":"stream: started","id":"eq41my2u"}
+{"time":"2025-04-16T18:15:18.454482+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"eq41my2u"}
+{"time":"2025-04-16T18:15:18.454529+07:00","level":"INFO","msg":"sender: started","stream_id":"eq41my2u"}
+{"time":"2025-04-16T18:15:18.454519+07:00","level":"INFO","msg":"handler: started","stream_id":"eq41my2u"}
+{"time":"2025-04-16T18:15:18.799616+07:00","level":"INFO","msg":"Starting system monitor"}

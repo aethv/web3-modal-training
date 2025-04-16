@@ -52,6 +52,7 @@ def train_model(config_path, resume=False, checkpoint_path=None):
     dataset_path = os.path.join(config["data_dir"], "tokenized_dataset")
     logger.info(f"Loading tokenized dataset from {dataset_path}")
     tokenized_dataset = load_from_disk(dataset_path)
+    print('Successfully loaded tokenized dataset')
     
     # Load model and tokenizer
     if resume and checkpoint_path:
@@ -124,7 +125,7 @@ def train_model(config_path, resume=False, checkpoint_path=None):
         model=model,
         args=training_args,
         train_dataset=tokenized_dataset["train"],
-        eval_dataset=tokenized_dataset["test"],
+        eval_dataset=tokenized_dataset["validation"],
         data_collator=data_collator,
     )
     

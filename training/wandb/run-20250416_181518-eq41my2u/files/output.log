@@ -1,0 +1,12 @@
+2025-04-16 18:15:18,839 - __main__ - INFO - Using device: cpu
+2025-04-16 18:15:18,839 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+Successfully loaded tokenized dataset
+2025-04-16 18:15:18,853 - __main__ - INFO - Loading model and tokenizer from ./models/base_model
+2025-04-16 18:15:18,936 - __main__ - INFO - Using LoRA for parameter-efficient fine-tuning
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 12.65it/s]
+trainable params: 8,388,608 || all params: 6,746,935,296 || trainable%: 0.1243
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2025-04-16 18:17:01,530 - __main__ - INFO - Starting training
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                                                                                      | 0/3 [00:00<?, ?it/s]

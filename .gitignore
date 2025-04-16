@@ -1,1 +1,2 @@
 training/models/*
+training/wandb/run-*

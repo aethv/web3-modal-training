@@ -29,7 +29,7 @@
     "log_level": "passive",
     "log_level_replica": "warning",
     "log_on_each_node": true,
-    "logging_dir": "./outputs/runs/Apr16_14-30-19_Macbook-ba-mua.local",
+    "logging_dir": "./outputs/runs/Apr16_18-13-33_Macbook-ba-mua.local",
     "logging_strategy": "steps",
     "logging_first_step": false,
     "logging_steps": 100,

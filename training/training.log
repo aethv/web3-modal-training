@@ -4,3 +4,19 @@
 2025-04-16 15:12:17,259 - __main__ - INFO - Starting training with config from config.json
 2025-04-16 15:12:19,740 - __main__ - INFO - Using device: cpu
 2025-04-16 15:12:19,740 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+2025-04-16 18:06:18,862 - __main__ - INFO - Starting training with config from config.json
+2025-04-16 18:06:21,339 - __main__ - INFO - Using device: cpu
+2025-04-16 18:06:21,340 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+2025-04-16 18:06:21,354 - __main__ - INFO - Loading model and tokenizer from ./models/base_model
+2025-04-16 18:06:21,437 - __main__ - INFO - Using LoRA for parameter-efficient fine-tuning
+2025-04-16 18:14:56,192 - __main__ - INFO - Starting training with config from config.json
+2025-04-16 18:14:58,218 - __main__ - INFO - Using device: cpu
+2025-04-16 18:14:58,218 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+2025-04-16 18:14:58,231 - __main__ - INFO - Loading model and tokenizer from ./models/base_model
+2025-04-16 18:14:58,314 - __main__ - INFO - Using LoRA for parameter-efficient fine-tuning
+2025-04-16 18:15:17,018 - __main__ - INFO - Starting training with config from config.json
+2025-04-16 18:15:18,839 - __main__ - INFO - Using device: cpu
+2025-04-16 18:15:18,839 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+2025-04-16 18:15:18,853 - __main__ - INFO - Loading model and tokenizer from ./models/base_model
+2025-04-16 18:15:18,936 - __main__ - INFO - Using LoRA for parameter-efficient fine-tuning
+2025-04-16 18:17:01,530 - __main__ - INFO - Starting training
