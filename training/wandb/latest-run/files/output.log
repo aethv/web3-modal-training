@@ -1,0 +1,18 @@
+2025-04-16 15:12:19,740 - __main__ - INFO - Using device: cpu
+2025-04-16 15:12:19,740 - __main__ - INFO - Loading tokenized dataset from ./data/tokenized_dataset
+Traceback (most recent call last):
+  File "/Users/thangnguyen/development/tutorial/web3-generator/training/train.py", line 151, in <module>
+    final_model_path = train_model(args.config, args.resume, args.checkpoint)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thangnguyen/development/tutorial/web3-generator/training/train.py", line 54, in train_model
+    tokenized_dataset = load_from_disk(dataset_path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/datasets/load.py", line 2146, in load_from_disk
+    return DatasetDict.load_from_disk(dataset_path, keep_in_memory=keep_in_memory, storage_options=storage_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/datasets/dataset_dict.py", line 1405, in load_from_disk
+    dataset_dict[k] = Dataset.load_from_disk(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 1687, in load_from_disk
+    raise FileNotFoundError(
+FileNotFoundError: No such file: '/Users/thangnguyen/development/tutorial/web3-generator/training/data/tokenized_dataset/train/state.json'. Expected to load a `Dataset` object but provided path is not a `Dataset`.

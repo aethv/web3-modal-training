@@ -1,0 +1,15 @@
+{"time":"2025-04-16T14:58:27.855741+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/thangnguyen/development/tutorial/web3-generator/training/wandb/run-20250416_145827-fpvtulyb/logs/debug-core.log"}
+{"time":"2025-04-16T14:58:28.504127+07:00","level":"INFO","msg":"created new stream","id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:28.504176+07:00","level":"INFO","msg":"stream: started","id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:28.504202+07:00","level":"INFO","msg":"handler: started","stream_id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:28.504229+07:00","level":"INFO","msg":"sender: started","stream_id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:28.504233+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:28.845151+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-16T14:58:29.485182+07:00","level":"INFO","msg":"stream: closing","id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:29.485229+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-16T14:58:29.485266+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-16T14:58:30.538856+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-16T14:58:30.900421+07:00","level":"INFO","msg":"sender: closed","stream_id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:30.900418+07:00","level":"INFO","msg":"handler: closed","stream_id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:30.900418+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fpvtulyb"}
+{"time":"2025-04-16T14:58:30.900601+07:00","level":"INFO","msg":"stream: closed","id":"fpvtulyb"}

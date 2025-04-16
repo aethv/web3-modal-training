@@ -1,0 +1,13 @@
+{"time":"2025-04-16T14:33:59.634317+07:00","level":"INFO","msg":"main: starting server","port-filename":"/var/folders/zv/jqgg0htd78q_jtygyg6q9xkh0000gn/T/tmpbdfbk_ms/port-64354.txt","pid":64354,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-04-16T14:33:59.644792+07:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":64354}
+{"time":"2025-04-16T14:33:59.644833+07:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":51754,"Zone":""}}
+{"time":"2025-04-16T14:33:59.655112+07:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:27.855489+07:00","level":"INFO","msg":"handleInformInit: received","streamId":"fpvtulyb","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:28.504184+07:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"fpvtulyb","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:29.485086+07:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:29.48514+07:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-04-16T14:58:29.485132+07:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:29.485256+07:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:30.900667+07:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:30.900687+07:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:51755"}
+{"time":"2025-04-16T14:58:30.900699+07:00","level":"INFO","msg":"server is closed"}

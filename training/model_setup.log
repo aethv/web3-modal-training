@@ -1,0 +1,14 @@
+2025-04-16 13:18:29,529 - __main__ - INFO - Initializing Web3ModelSetup
+2025-04-16 13:18:29,529 - __main__ - INFO - Using device: cpu
+2025-04-16 13:18:29,529 - __main__ - INFO - Downloading base model: codellama/CodeLlama-7b-hf
+2025-04-16 14:27:50,415 - __main__ - INFO - Base model and tokenizer downloaded successfully
+2025-04-16 14:30:17,589 - __main__ - INFO - Model and tokenizer saved to ./models/base_model
+2025-04-16 14:30:17,645 - __main__ - INFO - Preparing initial dataset
+2025-04-16 14:30:17,645 - __main__ - INFO - Building dataset from web3 code samples
+2025-04-16 14:30:18,875 - __main__ - INFO - Dataset saved to ./data/initial_dataset
+2025-04-16 14:30:18,875 - __main__ - INFO - Tokenizing dataset
+2025-04-16 14:30:19,032 - __main__ - ERROR - Error tokenizing dataset: Please pass `features` or at least one example when writing data
+2025-04-16 14:30:19,032 - __main__ - INFO - Setting up training arguments
+2025-04-16 14:30:19,512 - __main__ - INFO - Training arguments saved to ./outputs/training_args.json
+2025-04-16 14:30:19,512 - __main__ - INFO - All setup steps complete. Ready for training!
+2025-04-16 14:30:19,512 - __main__ - INFO - Setup ready for training: True
