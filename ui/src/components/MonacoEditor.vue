@@ -44,6 +44,7 @@ export default {
       // Register Solidity language if not already registered
       if (!monaco.languages.getLanguages().some(lang => lang.id === 'solidity')) {
         monaco.languages.register({ id: 'solidity' });
+        /* eslint-disable */
         monaco.languages.setMonarchTokensProvider('solidity', {
           tokenizer: {
             root: [

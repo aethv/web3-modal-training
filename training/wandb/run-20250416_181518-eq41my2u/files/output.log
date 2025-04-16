@@ -9,4 +9,6 @@ trainable params: 8,388,608 || all params: 6,746,935,296 || trainable%: 0.1243
   warnings.warn(
 2025-04-16 18:17:01,530 - __main__ - INFO - Starting training
 [34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
-  0%|                                                                                                                                                      | 0/3 [00:00<?, ?it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [16:09<00:00, 323.13s/it]                 
+{'train_runtime': 969.4914, 'train_samples_per_second': 0.003, 'train_steps_per_second': 0.003, 'train_loss': 3.742781639099121, 'epoch': 3.0}
+2025-04-16 18:33:11,605 - __main__ - INFO - Training complete. Final model saved to ./outputs/final_model

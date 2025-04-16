@@ -32,7 +32,6 @@
 
 <script>
 import MonacoEditor from '@/components/MonacoEditor.vue';
-
 export default {
   name: 'CodePreview',
   components: {
@@ -120,7 +119,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .code-preview {
   margin-top: 30px;
   padding: 20px;
@@ -129,56 +128,50 @@ export default {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h2 {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.stats {
-  margin-bottom: 10px;
-  color: #666;
-  font-size: 14px;
-}
-
-.editor-container {
-  height: 500px;
-  border-radius: 4px;
+.code-preview-container {
+  margin-bottom: 20px;
+  background-color: #f7f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-bottom: 15px;
 }
 
-.actions {
+.code-header {
   display: flex;
-  gap: 10px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #2c3e50;
+  color: white;
 }
 
-.btn {
-  padding: 10px 20px;
+.code-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.copy-button {
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-.btn-primary {
-  background-color: #4285f4;
-  color: white;
+.copy-button:hover {
+  background-color: #2980b9;
 }
 
-.btn-secondary {
-  background-color: #f1f3f4;
-  color: #202124;
-}
-
-.copy-notification {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #323232;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  z-index: 1000;
+.code-block {
+  padding: 20px;
+  margin: 0;
+  background-color: #282c34;
+  color: #abb2bf;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
 }
 </style>

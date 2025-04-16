@@ -5,3 +5,12 @@
 {"time":"2025-04-16T18:15:18.454529+07:00","level":"INFO","msg":"sender: started","stream_id":"eq41my2u"}
 {"time":"2025-04-16T18:15:18.454519+07:00","level":"INFO","msg":"handler: started","stream_id":"eq41my2u"}
 {"time":"2025-04-16T18:15:18.799616+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-16T18:33:11.615988+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-16T18:33:11.616435+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-16T18:33:12.641943+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.510424959,"progress":"2.1KB/2.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.509661167,"progress":"285B/285B"},{"desc":"uploading config.yaml","runtime_seconds":0.210227292,"progress":"9.9KB/9.9KB"}],"total_operations":3}}
+{"time":"2025-04-16T18:33:12.911892+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-16T18:33:13.382432+07:00","level":"INFO","msg":"stream: closing","id":"eq41my2u"}
+{"time":"2025-04-16T18:33:13.382459+07:00","level":"INFO","msg":"handler: closed","stream_id":"eq41my2u"}
+{"time":"2025-04-16T18:33:13.382469+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eq41my2u"}
+{"time":"2025-04-16T18:33:13.382658+07:00","level":"INFO","msg":"sender: closed","stream_id":"eq41my2u"}
+{"time":"2025-04-16T18:33:13.382746+07:00","level":"INFO","msg":"stream: closed","id":"eq41my2u"}

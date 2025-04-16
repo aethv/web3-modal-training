@@ -1,2 +1,3 @@
 training/models/*
 training/wandb/run-*
+ui/node_modules

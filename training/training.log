@@ -20,3 +20,5 @@
 2025-04-16 18:15:18,853 - __main__ - INFO - Loading model and tokenizer from ./models/base_model
 2025-04-16 18:15:18,936 - __main__ - INFO - Using LoRA for parameter-efficient fine-tuning
 2025-04-16 18:17:01,530 - __main__ - INFO - Starting training
+2025-04-16 18:33:11,605 - __main__ - INFO - Training complete. Final model saved to ./outputs/final_model
+2025-04-16 18:33:13,453 - __main__ - INFO - Training script completed. Model available at: ./outputs/final_model
